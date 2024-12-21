@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="medical_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+<body>
+    
+    <!-- =============================
+             HEADER SECTION
+    ============================= -->
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa fa-close"style="font-size:32px"></i></a></li>
+            <li><a href="/pages/product.html">Our Product</a></li>
+            <li><a href="/pages/medical.html">For Medical Professionals</a></li>
+            <li><a href="/pages/patients.html">For Patients</a></li>
+            <li><a href="/pages/news.html">News & Views</a></li>
+            <li><a href="/pages/contact.html">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/index.html"><img src="/images/logo.jpeg" alt=""></a></li>
+            <li class="hide-mobile"><a href="/pages/product.html">Our Product</a></li>
+            <li class="hide-mobile"><a href="/pages/medical.html">For Medical Professionals</a></li>
+            <li class="hide-mobile"><a href="/pages/patients.html">For Patients</a></li>
+            <li class="hide-mobile"><a href="/pages/news.html">News & Views</a></li>
+            <li class="hide-mobile"><a href="/pages/contact.html">Contact Us</a></li>
+            <li class="hide-pc" onclick=showSidebar()><a href="#"><i class="fa fa-bars"style="font-size:30px"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- ================
+        BODY
+    ================ -->
+
+    <div class="medical-intro">
+        <div class="medical-text">
+            <h1>HRV Data Recorder for <span>Medical Professionals</span></h1>
+            <p>Electrocardiogram is a window into the Heart's rythm and health. It Provides inavluable insights into the electrical activity of the Heart.</p>
+        </div>
+        <img src="/images/medical1.jpg" alt="">
+    </div>
+
+    <div class="med-use-list">
+        <div class="use-item">
+            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+            <h2>Detecting Heart Conditions</h2>
+        </div>
+        <div class="use-item">
+            <i class="fa fa-user-md" aria-hidden="true"></i>
+            <h2>Monitoring Heart Health</h2>
+        </div>
+        <div class="use-item">
+            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+            <h2>Assessing Risk</h2>
+        </div>
+        <div class="use-item">
+            <i class="fa fa-stethoscope" aria-hidden="true"></i>
+            <h2>Guiding Treatment Decisions</h2>
+        </div>
+    </div>
+    
+
+
+
+    <!-- ========================
+        Footer Section 
+    ======================== -->
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <img src="images/logo.jpeg" alt="" class="footer-logo">
+                <p>Pre Care Labs is preseented by Chiranjeevi life sciences Pvt.Ltd</p>
+                <div class="social-media">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h2>Contact Us</h2>
+                <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>  7013253771</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>  reports@precarelabs.com</a></li>
+                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>  Visakhapatnam | Hyderabad | Germany</a></li>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+</body>
+</html>
